@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Queryable Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/Queryable" class="dashAnchor"></a>
+    <a title="Queryable Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">PrediKit Docs</a> (67% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">PrediKit Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Queryable Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/BasicQuery.html">BasicQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BooleanQuery.html">BooleanQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DateQuery.html">DateQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:C8PrediKit17FinalizedIncluder">FinalizedIncluder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MemberQuery.html">MemberQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NumberQuery.html">NumberQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PredicateBuilder.html">PredicateBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:C8PrediKit24PredicateSubqueryBuilder">PredicateSubqueryBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SequenceQuery.html">SequenceQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StringQuery.html">StringQuery</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/MatchType.html">MatchType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/NSArray.html">NSArray</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSObject.html">NSObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSPredicate.html">NSPredicate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions/!(_:).html">!(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&amp;&amp;(_:_:).html">&amp;&amp;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF8PrediKitoi2aaFTCSo11NSPredicateS0__S0_">&amp;&amp;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/||(_:_:).html">||(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF8PrediKitoi2ooFTCSo11NSPredicateS0__S0_">||(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/Matchable.html">Matchable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NilComparable.html">NilComparable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Queryable.html">Queryable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Reflectable.html">Reflectable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/PredicateOptions.html">PredicateOptions</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Queryable</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Queryable</span><span class="p">:</span> <span class="kd">class</span></code></pre>
+
+                </div>
+              </div>
+            <p>Indicates that a class can be used as a Query object.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vP8PrediKit9Queryable7builderGCS_16PredicateBuilderwx11BuilderType_"></a>
+                    <a name="//apple_ref/swift/Property/builder" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vP8PrediKit9Queryable7builderGCS_16PredicateBuilderwx11BuilderType_">builder</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A reference to the dependency-injected builder parameter passed in to PrediKit&rsquo;s <code><a href="../Extensions/NSPredicate.html">NSPredicate</a></code> closure initialization. Any changes made to this builder is reflected in the final outcome of the outputted <code><a href="../Extensions/NSPredicate.html">NSPredicate</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">builder</span><span class="p">:</span> <span class="kt">PredicateBuilder</span><span class="o">&lt;</span><span class="kt">BuilderType</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P8PrediKit9Queryable11BuilderType"></a>
+                    <a name="//apple_ref/swift/Alias/BuilderType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P8PrediKit9Queryable11BuilderType">BuilderType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A generic <code><a href="../Protocols/Reflectable.html">Reflectable</a></code> that is used to maintain a consistent type throughout the creation of an includer.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">as</span><span class="n">sociatedtype</span> <span class="kt">BuilderType</span><span class="p">:</span> <span class="kt">Reflectable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vP8PrediKit9Queryable8propertySS"></a>
+                    <a name="//apple_ref/swift/Property/property" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vP8PrediKit9Queryable8propertySS">property</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The property to query against.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">property</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="https://github.com/KrakenDev/PrediKit" target="_blank" rel="external">Hector Matos</a>. All rights reserved. (Last updated: 2016-05-30)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.6.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

@@ -13,7 +13,7 @@
     <a title="PrediKit  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">PrediKit Docs</a> (86% documented)</p>
+        <p><a href="index.html">PrediKit Docs</a> (67% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -30,34 +30,34 @@
             <a href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Classes.html#/s:C8PrediKit23FinalizedPredicateQuery">FinalizedPredicateQuery</a>
+                <a href="Classes/BasicQuery.html">BasicQuery</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/PredicateBooleanQuery.html">PredicateBooleanQuery</a>
+                <a href="Classes/BooleanQuery.html">BooleanQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DateQuery.html">DateQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes.html#/s:C8PrediKit17FinalizedIncluder">FinalizedIncluder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/MemberQuery.html">MemberQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/NumberQuery.html">NumberQuery</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/PredicateBuilder.html">PredicateBuilder</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/PredicateDateQuery.html">PredicateDateQuery</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/PredicateMemberQuery.html">PredicateMemberQuery</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/PredicateNumberQuery.html">PredicateNumberQuery</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/PredicateQueryBuilder.html">PredicateQueryBuilder</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/PredicateSequenceQuery.html">PredicateSequenceQuery</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/PredicateStringQuery.html">PredicateStringQuery</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Classes.html#/s:C8PrediKit24PredicateSubqueryBuilder">PredicateSubqueryBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SequenceQuery.html">SequenceQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/StringQuery.html">StringQuery</a>
               </li>
             </ul>
           </li>
@@ -65,13 +65,16 @@
             <a href="Enums.html">Enums</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Enums/SubqueryMatch.html">SubqueryMatch</a>
+                <a href="Enums/MatchType.html">MatchType</a>
               </li>
             </ul>
           </li>
           <li class="nav-group-name">
             <a href="Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions/NSArray.html">NSArray</a>
+              </li>
               <li class="nav-group-task">
                 <a href="Extensions/NSObject.html">NSObject</a>
               </li>
@@ -104,6 +107,15 @@
             <a href="Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="Protocols/Matchable.html">Matchable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/NilComparable.html">NilComparable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/Queryable.html">Queryable</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Protocols/Reflectable.html">Reflectable</a>
               </li>
             </ul>
@@ -125,8 +137,9 @@
             <p><img src="https://github.com/KrakenDev/PrediKit/wiki/Sources/Banner.jpg" alt="Pretty Banner">
 <a href="https://travis-ci.org/KrakenDev/PrediKit"><img src="http://img.shields.io/travis/KrakenDev/PrediKit.svg?style=flat-square" alt="Travis Build Status"></a>
 <a href="https://coveralls.io/github/KrakenDev/PrediKit?branch=master"><img src="https://img.shields.io/coveralls/KrakenDev/PrediKit/master.svg?style=flat-square" alt="Coveralls"></a>
+<a href=""><img src="https://img.shields.io/cocoapods/p/PrediKit.svg" alt="Supported Platforms"></a>
 <a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/swift2-compatible-4BC51D.svg?style=flat-square" alt="Swift Version Compatibility"></a>
-<a href="https://cocoapods.org/pods/PrediKit"><img src="https://img.shields.io/badge/pod-2.0.3-blue.svg?style=flat-square" alt="Cocoapods Version"></a>
+<a href="https://cocoapods.org/pods/PrediKit"><img src="https://img.shields.io/badge/pod-3.0-blue.svg?style=flat-square" alt="Cocoapods Version"></a>
 <a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat-square" alt="Carthage Compatible"></a>
 <a href="https://raw.githubusercontent.com/KrakenDev/PrediKit/master/LICENSE"><img src="http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="LICENSE"></a></p>
 <a href='#predikit' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='predikit'>PrediKit</h1>
@@ -136,7 +149,7 @@
 <p>If you&rsquo;re familiar with the intuitive feel of the <a href="https://github.com/SnapKit/SnapKit">SnapKit</a> API, then you&rsquo;ll feel right at home with PrediKit! 💖</p>
 <a href='#documentation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='documentation'>Documentation</h1>
 
-<p>Documentation is generated by <a href="https://github.com/realm/jazzy">Jazzy</a> and can be found <a href="http://krakendev.github.io/PrediKit/docs">here for your convenience</a>!</p>
+<p>Documentation is generated by <a href="https://github.com/realm/jazzy">Jazzy</a> and can be found <a href="http://krakendev.github.io/PrediKit">here for your convenience</a>!</p>
 <a href='#why_create_predikit' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='why_create_predikit'>Why create PrediKit?</h1>
 
 <p>Because I wanted to! Also, because <code>NSPredicate</code> creation is hard. When working with <code>CoreData</code> you use <code>NSPredicates</code> to fetch persisted objects. <code>CoreData</code> is hard enough, so why have the additional complexity of using a complex string-based predicate system?</p>
@@ -199,9 +212,17 @@
 </code></pre>
 <a href='#manually' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='manually'>Manually</h2>
 
-<p>If you prefer not to use either of the aforementioned dependency managers, you can integrate PrediKit into your project manually. I specifically kept all of the code for PrediKit in one file in order to support you peeps who like to integrate manually.</p>
+<p>If you prefer not to use either of the aforementioned dependency managers, you can integrate PrediKit into your project manually.</p>
 
-<p>First, click on the Sources folder link, right click on <code>PrediKit.swift</code> and click <code>Save Link As</code>. Save the file wherever you&rsquo;d like and drag the downloaded file into your project. That&rsquo;s it! One and done, folks!</p>
+<p>First, copy and paste these commands into Terminal:
+<code>bash
+git clone https://github.com/KrakenDev/PrediKit.git
+open PrediKit/Sources/
+</code></p>
+
+<p>This should open a Finder window with the important files needed for PrediKit located in the Sources folder of the repo. Drag these folders into your project (preferable in a folder named <q>PrediKit</q>) and code away! Since you would be copying these files into your project directly, there is no need for the <code>import PrediKit</code> line in any of the files that you need it.</p>
+
+<p>The downside to this is that you can not update PrediKit easily. You would need to repeat these steps each time you wanna grab the latest and greatest! 😱</p>
 <a href='#usage' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='usage'>Usage</h1>
 
 <p>PrediKit tries to make <code>NSPredicate</code> creation easy. <strong>Heavily</strong> inspired by <a href="https://github.com/SnapKit/SnapKit">SnapKit&rsquo;s</a> API, the API for PrediKit is extremely similar for people who love it as much as I do. Check it out. This example creates a predicate used to fetch a <code>ManagedObject</code> from <code>CoreData</code>:</p>
@@ -241,11 +262,11 @@
 
 <p>PrediKit also overloads the <code>&amp;&amp;</code>, <code>||</code>, and <code>!</code> operators. This allows you compound and specify whether or <code>not</code> to include your <code>includers</code> (Crappy name, I know. Feel free to give me suggestions).</p>
 <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">predicate</span> <span class="o">=</span> <span class="kt">NSPredicate</span><span class="p">(</span><span class="kt">ManagedLegend</span><span class="o">.</span><span class="k">self</span><span class="p">)</span> <span class="p">{</span> <span class="n">includeIf</span> <span class="k">in</span>
-    <span class="c1">//Include any ManagedLegend instance if the property named "string" is NOT nil and does NOT equal "The Almighty Kraken" </span>
+    <span class="c1">//Include any ManagedLegend instance if the property named "string" is NOT nil and does NOT equal "The Almighty Kraken"</span>
     <span class="o">!</span><span class="n">includeIf</span><span class="o">.</span><span class="nf">string</span><span class="p">(</span><span class="s">"title"</span><span class="p">)</span><span class="o">.</span><span class="n">equalsNil</span> <span class="o">&amp;&amp;</span>
     <span class="o">!</span><span class="n">includeIf</span><span class="o">.</span><span class="nf">string</span><span class="p">(</span><span class="s">"title"</span><span class="p">)</span><span class="o">.</span><span class="nf">equals</span><span class="p">(</span><span class="s">"The Almighty Kraken"</span><span class="p">)</span> <span class="o">&amp;&amp;</span>
 
-    <span class="c1">//Also include any ManagedLegend instance if the date property named "birthdate" is in the past or if the bool property "isAwesome" is true. </span>
+    <span class="c1">//Also include any ManagedLegend instance if the date property named "birthdate" is in the past or if the bool property "isAwesome" is true.</span>
     <span class="n">includeIf</span><span class="o">.</span><span class="nf">date</span><span class="p">(</span><span class="s">"birthdate"</span><span class="p">)</span><span class="o">.</span><span class="nf">isEarlierThan</span><span class="p">(</span><span class="kt">NSDate</span><span class="p">())</span> <span class="o">||</span>
     <span class="n">includeIf</span><span class="o">.</span><span class="nf">bool</span><span class="p">(</span><span class="s">"isAwesome"</span><span class="p">)</span><span class="o">.</span><span class="n">isTrue</span>
 <span class="p">}</span>
@@ -328,7 +349,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2016 <a class="link" href="https://github.com/KrakenDev/PrediKit" target="_blank" rel="external">Hector Matos</a>. All rights reserved. (Last updated: 2016-05-29)</p>
+          <p>&copy; 2016 <a class="link" href="https://github.com/KrakenDev/PrediKit" target="_blank" rel="external">Hector Matos</a>. All rights reserved. (Last updated: 2016-05-30)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.6.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

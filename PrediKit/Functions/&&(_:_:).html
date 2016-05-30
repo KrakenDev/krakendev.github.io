@@ -14,7 +14,7 @@
     <a title="&amp;&amp;(_:_:) Function Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">PrediKit Docs</a> (86% documented)</p>
+        <p><a href="../index.html">PrediKit Docs</a> (67% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -31,34 +31,34 @@
             <a href="../Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Classes.html#/s:C8PrediKit23FinalizedPredicateQuery">FinalizedPredicateQuery</a>
+                <a href="../Classes/BasicQuery.html">BasicQuery</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/PredicateBooleanQuery.html">PredicateBooleanQuery</a>
+                <a href="../Classes/BooleanQuery.html">BooleanQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DateQuery.html">DateQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:C8PrediKit17FinalizedIncluder">FinalizedIncluder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MemberQuery.html">MemberQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NumberQuery.html">NumberQuery</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/PredicateBuilder.html">PredicateBuilder</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/PredicateDateQuery.html">PredicateDateQuery</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/PredicateMemberQuery.html">PredicateMemberQuery</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/PredicateNumberQuery.html">PredicateNumberQuery</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/PredicateQueryBuilder.html">PredicateQueryBuilder</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/PredicateSequenceQuery.html">PredicateSequenceQuery</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/PredicateStringQuery.html">PredicateStringQuery</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Classes.html#/s:C8PrediKit24PredicateSubqueryBuilder">PredicateSubqueryBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SequenceQuery.html">SequenceQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StringQuery.html">StringQuery</a>
               </li>
             </ul>
           </li>
@@ -66,13 +66,16 @@
             <a href="../Enums.html">Enums</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Enums/SubqueryMatch.html">SubqueryMatch</a>
+                <a href="../Enums/MatchType.html">MatchType</a>
               </li>
             </ul>
           </li>
           <li class="nav-group-name">
             <a href="../Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/NSArray.html">NSArray</a>
+              </li>
               <li class="nav-group-task">
                 <a href="../Extensions/NSObject.html">NSObject</a>
               </li>
@@ -105,6 +108,15 @@
             <a href="../Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Protocols/Matchable.html">Matchable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NilComparable.html">NilComparable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Queryable.html">Queryable</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols/Reflectable.html">Reflectable</a>
               </li>
             </ul>
@@ -125,11 +137,11 @@
             <h1>&amp;&amp;(_:_:)</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="o">&amp;&amp;</span> <span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">FinalizedPredicateQuery</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">FinalizedPredicateQuery</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">FinalizedPredicateQuery</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="o">&amp;&amp;</span> <span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">FinalizedIncluder</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">FinalizedIncluder</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">FinalizedIncluder</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
 
                 </div>
               </div>
-            <p>Convenience infix <code>&amp;&amp;</code> operator that combines two <code><a href="../Classes.html#/s:C8PrediKit23FinalizedPredicateQuery">FinalizedPredicateQuery&lt;T&gt;</a></code> instances into one <code><a href="../Classes.html#/s:C8PrediKit23FinalizedPredicateQuery">FinalizedPredicateQuery&lt;T&gt;</a></code> that represents the ANDed compound of the <code>finalizedPredicate</code> properties in each instance.</p>
+            <p>Convenience infix <code>&amp;&amp;</code> operator that combines two <code><a href="../Classes.html#/s:C8PrediKit17FinalizedIncluder">FinalizedIncluder&lt;T&gt;</a></code> instances into one <code><a href="../Classes.html#/s:C8PrediKit17FinalizedIncluder">FinalizedIncluder&lt;T&gt;</a></code> that represents the ANDed compound of the <code>finalizedPredicate</code> properties in each instance.</p>
 
 <p>Essentially, you use this operator to join together two includers.</p>
 
@@ -140,9 +152,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:tZF8PrediKitoi2aauRxS_11ReflectablerFTGCS_23FinalizedPredicateQueryx_GS1_x__GS1_x_L_1TMx"></a>
+                    <a name="/s:tZF8PrediKitoi2aauRxS_11ReflectablerFTGCS_17FinalizedIncluderx_GS1_x__GS1_x_L_1TMx"></a>
                     <a name="//apple_ref/swift/Parameter/T" class="dashAnchor"></a>
-                    <a class="token" href="#/s:tZF8PrediKitoi2aauRxS_11ReflectablerFTGCS_23FinalizedPredicateQueryx_GS1_x__GS1_x_L_1TMx">T</a>
+                    <a class="token" href="#/s:tZF8PrediKitoi2aauRxS_11ReflectablerFTGCS_17FinalizedIncluderx_GS1_x__GS1_x_L_1TMx">T</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -157,7 +169,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="o">&amp;&amp;</span> <span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">FinalizedPredicateQuery</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">FinalizedPredicateQuery</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">FinalizedPredicateQuery</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="o">&amp;&amp;</span> <span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">FinalizedIncluder</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">FinalizedIncluder</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">FinalizedIncluder</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -169,7 +181,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2016 <a class="link" href="https://github.com/KrakenDev/PrediKit" target="_blank" rel="external">Hector Matos</a>. All rights reserved. (Last updated: 2016-05-29)</p>
+          <p>&copy; 2016 <a class="link" href="https://github.com/KrakenDev/PrediKit" target="_blank" rel="external">Hector Matos</a>. All rights reserved. (Last updated: 2016-05-30)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.6.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

@@ -210,12 +210,34 @@
 <span class="p">}</span>
 </code></pre>
 
-<p>To check if a property is nil:
-<code>swift
-let predicate = NSPredicate(ManagedLegend.self) { includeIf in
-    includeIf.string(&quot;title&quot;).equalsNil
-}
-</code></p>
+<p>To check if a property is nil:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">predicate</span> <span class="o">=</span> <span class="kt">NSPredicate</span><span class="p">(</span><span class="kt">ManagedLegend</span><span class="o">.</span><span class="k">self</span><span class="p">)</span> <span class="p">{</span> <span class="n">includeIf</span> <span class="k">in</span>
+    <span class="n">includeIf</span><span class="o">.</span><span class="nf">string</span><span class="p">(</span><span class="s">"title"</span><span class="p">)</span><span class="o">.</span><span class="n">equalsNil</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>PrediKit can also query member properties. Say you have a class structure like this:</p>
+<pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">Captain</span><span class="p">:</span> <span class="kt">NSObject</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span>
+<span class="p">}</span>
+<span class="kd">class</span> <span class="kt">Ship</span><span class="p">:</span> <span class="kt">NSObject</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">captain</span><span class="p">:</span> <span class="kt">Captain</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>And you want to create these predicates:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">someCaptain</span> <span class="o">=</span> <span class="kt">Captain</span><span class="p">()</span>
+<span class="kt">NSPredicate</span><span class="p">(</span><span class="nv">format</span><span class="p">:</span> <span class="s">"captain == %@ &amp;&amp; captain.name == 'Chief Supreme'"</span><span class="p">,</span> <span class="n">someCaptain</span><span class="p">)</span>
+</code></pre>
+
+<p>Creating the above with PrediKit is easy and expressive:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">someCaptain</span> <span class="o">=</span> <span class="kt">Captain</span><span class="p">()</span>
+<span class="k">let</span> <span class="nv">predicate</span> <span class="o">=</span> <span class="kt">NSPredicate</span><span class="p">(</span><span class="kt">Ship</span><span class="o">.</span><span class="k">self</span><span class="p">)</span> <span class="p">{</span> <span class="n">includeIf</span>
+    <span class="k">let</span> <span class="nv">includeIfShipCaptain</span> <span class="o">=</span> <span class="n">includeIf</span><span class="o">.</span><span class="nf">member</span><span class="p">(</span><span class="s">"captain"</span><span class="p">,</span> <span class="nv">ofType</span><span class="p">:</span> <span class="kt">Captain</span><span class="o">.</span><span class="k">self</span><span class="p">)</span>
+    <span class="n">includeIfShipCaptain</span><span class="o">.</span><span class="nf">equals</span><span class="p">(</span><span class="n">someCaptain</span><span class="p">)</span> <span class="o">&amp;&amp;</span>
+    <span class="n">includeIfShipCaptain</span><span class="o">.</span><span class="nf">string</span><span class="p">(</span><span class="s">"name"</span><span class="p">)</span><span class="o">.</span><span class="nf">equals</span><span class="p">(</span><span class="s">"Chief Supreme"</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
 
 <p>PrediKit also overloads the <code>&amp;&amp;</code>, <code>||</code>, and <code>!</code> operators. This allows you compound and specify whether or <code>not</code> to include your <code>includers</code> (Crappy name, I know. Feel free to give me suggestions).</p>
 <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">predicate</span> <span class="o">=</span> <span class="kt">NSPredicate</span><span class="p">(</span><span class="kt">ManagedLegend</span><span class="o">.</span><span class="k">self</span><span class="p">)</span> <span class="p">{</span> <span class="n">includeIf</span> <span class="k">in</span>
@@ -263,7 +285,7 @@ let predicate = NSPredicate(ManagedLegend.self) { includeIf in
 </code></pre>
 <a href='#selector_extension_pattern' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='selector_extension_pattern'>Selector Extension Pattern</h1>
 
-<p>Personally, I love using a variation of the <a href="https://medium.com/swift-programming/swift-selector-syntax-sugar-81c8a8b10df3#.bypt7blba">Selector Extension Pattern</a> when using PrediKit. It allows you to avoid misspelling your property names when using the API. By creating a Selector extension like so:</p>
+<p>Personally, I love using a variation of the <a href="https://medium.com/swift-programming/swift-selector-syntax-sugar-81c8a8b10df3#.bypt7blba">Selector Extension Pattern</a> when using PrediKit. It allows you to avoid misspelling your property names when using the API. It also allows you to rename your selector properties at will. By renaming, every instance of that selector used by PrediKit should give you a compiler error so you don&rsquo;t miss a beat and can feel safe knowing you haven&rsquo;t missed any property names in a name change refactor. By creating a Selector extension like so:</p>
 <pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">Foundation</span>
 
 <span class="kd">extension</span> <span class="kt">Selector</span> <span class="p">{</span>
@@ -306,7 +328,7 @@ let predicate = NSPredicate(ManagedLegend.self) { includeIf in
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2016 <a class="link" href="https://github.com/KrakenDev/PrediKit" target="_blank" rel="external">Hector Matos</a>. All rights reserved. (Last updated: 2016-05-27)</p>
+          <p>&copy; 2016 <a class="link" href="https://github.com/KrakenDev/PrediKit" target="_blank" rel="external">Hector Matos</a>. All rights reserved. (Last updated: 2016-05-29)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.6.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

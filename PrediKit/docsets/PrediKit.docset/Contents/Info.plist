@@ -7,7 +7,7 @@
     <key>CFBundleName</key>
       <string>PrediKit</string>
     <key>DocSetPlatformFamily</key>
-      <string>jazzy</string>
+      <string>predikit</string>
     <key>isDashDocset</key>
       <true/>
     <key>dashIndexFilePath</key>

@@ -14,7 +14,7 @@
     <a title="Matchable Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">PrediKit Docs</a> (67% documented)</p>
+        <p><a href="../index.html">PrediKit Docs</a> (85% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -68,14 +68,14 @@
               <li class="nav-group-task">
                 <a href="../Enums/MatchType.html">MatchType</a>
               </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MatchType/FunctionType.html">– FunctionType</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
             <a href="../Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="../Extensions/NSArray.html">NSArray</a>
-              </li>
               <li class="nav-group-task">
                 <a href="../Extensions/NSObject.html">NSObject</a>
               </li>
@@ -91,16 +91,16 @@
                 <a href="../Functions/!(_:).html">!(_:)</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Functions.html#/s:F8PrediKitoi2aaFTCSo11NSPredicateS0__S0_">&amp;&amp;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Functions/&amp;&amp;(_:_:).html">&amp;&amp;(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:ZF8PrediKitoi2aaFTCSo11NSPredicateS0__S0_">&amp;&amp;(_:_:)</a>
+                <a href="../Functions.html#/s:F8PrediKitoi2ooFTCSo11NSPredicateS0__S0_">||(_:_:)</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Functions/||(_:_:).html">||(_:_:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Functions.html#/s:ZF8PrediKitoi2ooFTCSo11NSPredicateS0__S0_">||(_:_:)</a>
               </li>
             </ul>
           </li>
@@ -112,6 +112,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/NilComparable.html">NilComparable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:P8PrediKit6Number">Number</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/Queryable.html">Queryable</a>
@@ -137,7 +140,7 @@
             <h1>Matchable</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Matchable</span><span class="p">:</span> <span class="kt">Queryable</span></code></pre>
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Matchable</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Queryable.html">Queryable</a></span></code></pre>
 
                 </div>
               </div>
@@ -150,9 +153,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FP8PrediKit9Matchable17matchesAnyValueInuRd__s14CollectionTyperFqd__GCS_17FinalizedIncluderwx11BuilderType_"></a>
+                    <a name="/s:FP8PrediKit9Matchable17matchesAnyValueInuRd__s10CollectionrFqd__GCS_17FinalizedIncluderwx11BuilderType_"></a>
                     <a name="//apple_ref/swift/Method/matchesAnyValueIn(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FP8PrediKit9Matchable17matchesAnyValueInuRd__s14CollectionTyperFqd__GCS_17FinalizedIncluderwx11BuilderType_">matchesAnyValueIn(_:)</a>
+                    <a class="token" href="#/s:FP8PrediKit9Matchable17matchesAnyValueInuRd__s10CollectionrFqd__GCS_17FinalizedIncluderwx11BuilderType_">matchesAnyValueIn(_:)</a>
                     </code>
                       <span class="declaration-note">
                         Default implementation
@@ -181,14 +184,27 @@ NSPredicate(format: "name IN %@", listOfObjects)
                       </div>
                       <h4>Default Implementation</h4>
                       <div class="default_impl abstract">
-                        <p>Undocumented</p>
+                        <p>Equivalent to the SQL-like <code>IN</code> operator where a predicate is created to match if a class&rsquo; property matches ANY value in a <code>CollectionType</code>. Equivalent to creating this predicate:</p>
+
+<pre class="highlight plaintext"><code>class Kraken {
+    var name: String
+}
+NSPredicate(format: "name IN %@", listOfObjects)
+</code></pre>
+
+<p><q>Fetch the `Kraken` object if the value of its `name` property matches any value in the `listOfObjects` array.</q></p>
+
+<ul>
+<li>Parameters:</li>
+<li>collection: An <code>Array</code> or <code>Set</code> of objects to match against.</li>
+</ul>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">func</span> <span class="n">matchesAnyValueIn</span><span class="o">&lt;</span><span class="kt">U</span><span class="p">:</span> <span class="kt">CollectionType</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">collection</span><span class="p">:</span> <span class="kt">U</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">FinalizedIncluder</span><span class="o">&lt;</span><span class="kt">BuilderType</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">@discardableResult</span> <span class="kd">func</span> <span class="n">matchesAnyValueIn</span><span class="o">&lt;</span><span class="kt">U</span><span class="p">:</span> <span class="kt">Collection</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">collection</span><span class="p">:</span> <span class="kt">U</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes.html#/s:C8PrediKit17FinalizedIncluder">FinalizedIncluder</a></span><span class="o">&lt;</span><span class="kt">BuilderType</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -200,8 +216,8 @@ NSPredicate(format: "name IN %@", listOfObjects)
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2016 <a class="link" href="https://github.com/KrakenDev/PrediKit" target="_blank" rel="external">Hector Matos</a>. All rights reserved. (Last updated: 2016-05-30)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.6.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2016 <a class="link" href="https://github.com/KrakenDev/PrediKit" target="_blank" rel="external">Hector Matos</a>. All rights reserved. (Last updated: 2016-09-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

@@ -13,7 +13,7 @@
     <a title="Protocols  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">PrediKit Docs</a> (67% documented)</p>
+        <p><a href="index.html">PrediKit Docs</a> (85% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -67,14 +67,14 @@
               <li class="nav-group-task">
                 <a href="Enums/MatchType.html">MatchType</a>
               </li>
+              <li class="nav-group-task">
+                <a href="Enums/MatchType/FunctionType.html">– FunctionType</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
             <a href="Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="Extensions/NSArray.html">NSArray</a>
-              </li>
               <li class="nav-group-task">
                 <a href="Extensions/NSObject.html">NSObject</a>
               </li>
@@ -90,16 +90,16 @@
                 <a href="Functions/!(_:).html">!(_:)</a>
               </li>
               <li class="nav-group-task">
+                <a href="Functions.html#/s:F8PrediKitoi2aaFTCSo11NSPredicateS0__S0_">&amp;&amp;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Functions/&amp;&amp;(_:_:).html">&amp;&amp;(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="Functions.html#/s:ZF8PrediKitoi2aaFTCSo11NSPredicateS0__S0_">&amp;&amp;(_:_:)</a>
+                <a href="Functions.html#/s:F8PrediKitoi2ooFTCSo11NSPredicateS0__S0_">||(_:_:)</a>
               </li>
               <li class="nav-group-task">
                 <a href="Functions/||(_:_:).html">||(_:_:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Functions.html#/s:ZF8PrediKitoi2ooFTCSo11NSPredicateS0__S0_">||(_:_:)</a>
               </li>
             </ul>
           </li>
@@ -111,6 +111,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/NilComparable.html">NilComparable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/s:P8PrediKit6Number">Number</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/Queryable.html">Queryable</a>
@@ -187,7 +190,7 @@
                       <div class="abstract">
                         <p>Used to query the property list of the conforming class. PrediKit uses this protocol to determine if the property you are specifying in the creation of a predicate actually exists in the conforming class. If it doesn&rsquo;t, PrediKit will print a warning to the console.</p>
 
-<p>All <code><a href="Extensions/NSObject.html">NSObject</a></code>s conform to this protocol through a public extension declared in PrediKit.</p>
+<p>All <code>NSObject</code>s conform to this protocol through a public extension declared in PrediKit.</p>
 
                         <a href="Protocols/Reflectable.html" class="slightly-smaller">See more</a>
                       </div>
@@ -227,9 +230,32 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Matchable</span><span class="p">:</span> <span class="kt">Queryable</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Matchable</span><span class="p">:</span> <span class="kt"><a href="Protocols/Queryable.html">Queryable</a></span></code></pre>
 
                         </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P8PrediKit6Number"></a>
+                    <a name="//apple_ref/swift/Protocol/Number" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P8PrediKit6Number">Number</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
                       </div>
                     </section>
                   </div>
@@ -259,7 +285,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">NilComparable</span><span class="p">:</span> <span class="kt">Queryable</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">NilComparable</span><span class="p">:</span> <span class="kt"><a href="Protocols/Queryable.html">Queryable</a></span></code></pre>
 
                         </div>
                       </div>
@@ -271,8 +297,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2016 <a class="link" href="https://github.com/KrakenDev/PrediKit" target="_blank" rel="external">Hector Matos</a>. All rights reserved. (Last updated: 2016-05-30)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.6.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2016 <a class="link" href="https://github.com/KrakenDev/PrediKit" target="_blank" rel="external">Hector Matos</a>. All rights reserved. (Last updated: 2016-09-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

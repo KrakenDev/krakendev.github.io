@@ -14,7 +14,7 @@
     <a title="BasicQuery Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">PrediKit Docs</a> (67% documented)</p>
+        <p><a href="../index.html">PrediKit Docs</a> (85% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -68,14 +68,14 @@
               <li class="nav-group-task">
                 <a href="../Enums/MatchType.html">MatchType</a>
               </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MatchType/FunctionType.html">– FunctionType</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
             <a href="../Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="../Extensions/NSArray.html">NSArray</a>
-              </li>
               <li class="nav-group-task">
                 <a href="../Extensions/NSObject.html">NSObject</a>
               </li>
@@ -91,16 +91,16 @@
                 <a href="../Functions/!(_:).html">!(_:)</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Functions.html#/s:F8PrediKitoi2aaFTCSo11NSPredicateS0__S0_">&amp;&amp;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Functions/&amp;&amp;(_:_:).html">&amp;&amp;(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:ZF8PrediKitoi2aaFTCSo11NSPredicateS0__S0_">&amp;&amp;(_:_:)</a>
+                <a href="../Functions.html#/s:F8PrediKitoi2ooFTCSo11NSPredicateS0__S0_">||(_:_:)</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Functions/||(_:_:).html">||(_:_:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Functions.html#/s:ZF8PrediKitoi2ooFTCSo11NSPredicateS0__S0_">||(_:_:)</a>
               </li>
             </ul>
           </li>
@@ -112,6 +112,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/NilComparable.html">NilComparable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:P8PrediKit6Number">Number</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/Queryable.html">Queryable</a>
@@ -137,7 +140,7 @@
             <h1>BasicQuery</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">BasicQuery</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">Reflectable</span><span class="o">&gt;</span><span class="p">:</span> <span class="kt">NilComparable</span><span class="p">,</span> <span class="kt">Matchable</span></code></pre>
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">BasicQuery</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Reflectable.html">Reflectable</a></span><span class="o">&gt;</span><span class="p">:</span> <span class="kt"><a href="../Protocols/NilComparable.html">NilComparable</a></span><span class="p">,</span> <span class="kt"><a href="../Protocols/Matchable.html">Matchable</a></span></code></pre>
 
                 </div>
               </div>
@@ -150,9 +153,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vC8PrediKit10BasicQuery7builderGCS_16PredicateBuilderx_"></a>
+                    <a name="/s:vP8PrediKit9Queryable7builderGCS_16PredicateBuilderwx11BuilderType_"></a>
                     <a name="//apple_ref/swift/Property/builder" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC8PrediKit10BasicQuery7builderGCS_16PredicateBuilderx_">builder</a>
+                    <a class="token" href="#/s:vP8PrediKit9Queryable7builderGCS_16PredicateBuilderwx11BuilderType_">builder</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -160,14 +163,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A basic query class that allows an interface for the NilComparable and Matchable protocol functionalities.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">BasicQuery</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">Reflectable</span><span class="o">&gt;</span><span class="p">:</span> <span class="kt">NilComparable</span><span class="p">,</span> <span class="kt">Matchable</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">builder</span><span class="p">:</span> <span class="kt"><a href="../Classes/PredicateBuilder.html">PredicateBuilder</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -177,9 +180,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vC8PrediKit10BasicQuery8propertySS"></a>
+                    <a name="/s:vP8PrediKit9Queryable8propertySS"></a>
                     <a name="//apple_ref/swift/Property/property" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC8PrediKit10BasicQuery8propertySS">property</a>
+                    <a class="token" href="#/s:vP8PrediKit9Queryable8propertySS">property</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -187,14 +190,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A basic query class that allows an interface for the NilComparable and Matchable protocol functionalities.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">BasicQuery</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">Reflectable</span><span class="o">&gt;</span><span class="p">:</span> <span class="kt">NilComparable</span><span class="p">,</span> <span class="kt">Matchable</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">property</span><span class="p">:</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -221,7 +224,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">BasicQuery</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">Reflectable</span><span class="o">&gt;</span><span class="p">:</span> <span class="kt">NilComparable</span><span class="p">,</span> <span class="kt">Matchable</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">BasicQuery</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Reflectable.html">Reflectable</a></span><span class="o">&gt;</span><span class="p">:</span> <span class="kt"><a href="../Protocols/NilComparable.html">NilComparable</a></span><span class="p">,</span> <span class="kt"><a href="../Protocols/Matchable.html">Matchable</a></span></code></pre>
 
                         </div>
                       </div>
@@ -233,8 +236,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2016 <a class="link" href="https://github.com/KrakenDev/PrediKit" target="_blank" rel="external">Hector Matos</a>. All rights reserved. (Last updated: 2016-05-30)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.6.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2016 <a class="link" href="https://github.com/KrakenDev/PrediKit" target="_blank" rel="external">Hector Matos</a>. All rights reserved. (Last updated: 2016-09-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

@@ -14,7 +14,7 @@
     <a title="PredicateBuilder Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">PrediKit Docs</a> (67% documented)</p>
+        <p><a href="../index.html">PrediKit Docs</a> (85% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -68,14 +68,14 @@
               <li class="nav-group-task">
                 <a href="../Enums/MatchType.html">MatchType</a>
               </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MatchType/FunctionType.html">– FunctionType</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
             <a href="../Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="../Extensions/NSArray.html">NSArray</a>
-              </li>
               <li class="nav-group-task">
                 <a href="../Extensions/NSObject.html">NSObject</a>
               </li>
@@ -91,16 +91,16 @@
                 <a href="../Functions/!(_:).html">!(_:)</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Functions.html#/s:F8PrediKitoi2aaFTCSo11NSPredicateS0__S0_">&amp;&amp;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Functions/&amp;&amp;(_:_:).html">&amp;&amp;(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:ZF8PrediKitoi2aaFTCSo11NSPredicateS0__S0_">&amp;&amp;(_:_:)</a>
+                <a href="../Functions.html#/s:F8PrediKitoi2ooFTCSo11NSPredicateS0__S0_">||(_:_:)</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Functions/||(_:_:).html">||(_:_:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Functions.html#/s:ZF8PrediKitoi2ooFTCSo11NSPredicateS0__S0_">||(_:_:)</a>
               </li>
             </ul>
           </li>
@@ -112,6 +112,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/NilComparable.html">NilComparable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:P8PrediKit6Number">Number</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/Queryable.html">Queryable</a>
@@ -137,11 +140,11 @@
             <h1>PredicateBuilder</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">PredicateBuilder</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">Reflectable</span><span class="o">&gt;</span></code></pre>
+                  <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">PredicateBuilder</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Reflectable.html">Reflectable</a></span><span class="o">&gt;</span></code></pre>
 
                 </div>
               </div>
-            <p>The class that gets passed into the builder closure of PrediKit&rsquo;s <code><a href="../Extensions/NSPredicate.html">NSPredicate</a></code> convenience initializer.</p>
+            <p>The class that gets passed into the builder closure of PrediKit&rsquo;s <code>NSPredicate</code> convenience initializer.</p>
 
           </section>
           <section class="section task-group-section">
@@ -170,7 +173,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">SELF</span><span class="p">:</span> <span class="kt">BasicQuery</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">SELF</span><span class="p">:</span> <span class="kt"><a href="../Classes/BasicQuery.html">BasicQuery</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -212,7 +215,7 @@ NSPredicate(format: "theyCallMe == 'Chief Supreme'")
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">string</span><span class="p">(</span><span class="nv">property</span><span class="p">:</span> <span class="kt">Selector</span><span class="p">,</span> <span class="nv">file</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="err">#</span><span class="n">file</span><span class="p">,</span> <span class="nv">line</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="err">#</span><span class="n">line</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">StringQuery</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">string</span><span class="p">(</span><span class="n">_</span> <span class="nv">property</span><span class="p">:</span> <span class="kt">Selector</span><span class="p">,</span> <span class="nv">file</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="err">#</span><span class="n">file</span><span class="p">,</span> <span class="nv">line</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="err">#</span><span class="n">line</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/StringQuery.html">StringQuery</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -254,7 +257,7 @@ NSPredicate(format: "numberOfHumansEaten &gt;= 6")
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">number</span><span class="p">(</span><span class="nv">property</span><span class="p">:</span> <span class="kt">Selector</span><span class="p">,</span> <span class="nv">file</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="err">#</span><span class="n">file</span><span class="p">,</span> <span class="nv">line</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="err">#</span><span class="n">line</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">NumberQuery</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">number</span><span class="p">(</span><span class="n">_</span> <span class="nv">property</span><span class="p">:</span> <span class="kt">Selector</span><span class="p">,</span> <span class="nv">file</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="err">#</span><span class="n">file</span><span class="p">,</span> <span class="nv">line</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="err">#</span><span class="n">line</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/NumberQuery.html">NumberQuery</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -296,7 +299,7 @@ NSPredicate(format: "birthdate == %@", NSDate())
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">date</span><span class="p">(</span><span class="nv">property</span><span class="p">:</span> <span class="kt">Selector</span><span class="p">,</span> <span class="nv">file</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="err">#</span><span class="n">file</span><span class="p">,</span> <span class="nv">line</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="err">#</span><span class="n">line</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">DateQuery</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">date</span><span class="p">(</span><span class="n">_</span> <span class="nv">property</span><span class="p">:</span> <span class="kt">Selector</span><span class="p">,</span> <span class="nv">file</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="err">#</span><span class="n">file</span><span class="p">,</span> <span class="nv">line</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="err">#</span><span class="n">line</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/DateQuery.html">DateQuery</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -338,7 +341,7 @@ NSPredicate(format: "isHungry == true")
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">bool</span><span class="p">(</span><span class="nv">property</span><span class="p">:</span> <span class="kt">Selector</span><span class="p">,</span> <span class="nv">file</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="err">#</span><span class="n">file</span><span class="p">,</span> <span class="nv">line</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="err">#</span><span class="n">line</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">BooleanQuery</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">bool</span><span class="p">(</span><span class="n">_</span> <span class="nv">property</span><span class="p">:</span> <span class="kt">Selector</span><span class="p">,</span> <span class="nv">file</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="err">#</span><span class="n">file</span><span class="p">,</span> <span class="nv">line</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="err">#</span><span class="n">line</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/BooleanQuery.html">BooleanQuery</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -380,7 +383,7 @@ NSPredicate(format: "friends.@count == 5")
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">collection</span><span class="p">(</span><span class="nv">property</span><span class="p">:</span> <span class="kt">Selector</span><span class="p">,</span> <span class="nv">file</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="err">#</span><span class="n">file</span><span class="p">,</span> <span class="nv">line</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="err">#</span><span class="n">line</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">SequenceQuery</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">collection</span><span class="p">(</span><span class="n">_</span> <span class="nv">property</span><span class="p">:</span> <span class="kt">Selector</span><span class="p">,</span> <span class="nv">file</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="err">#</span><span class="n">file</span><span class="p">,</span> <span class="nv">line</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="err">#</span><span class="n">line</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/SequenceQuery.html">SequenceQuery</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -423,7 +426,7 @@ NSPredicate(format: "friend == %@", legendaryCreature)
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">member</span><span class="o">&lt;</span><span class="kt">U</span><span class="p">:</span> <span class="kd">protocol</span><span class="o">&lt;</span><span class="kt">Reflectable</span><span class="p">,</span> <span class="kt">AnyObject</span><span class="o">&gt;&gt;</span><span class="p">(</span><span class="nv">property</span><span class="p">:</span> <span class="kt">Selector</span><span class="p">,</span> <span class="n">ofType</span> <span class="nv">memberType</span><span class="p">:</span> <span class="kt">U</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span> <span class="nv">file</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="err">#</span><span class="n">file</span><span class="p">,</span> <span class="nv">line</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="err">#</span><span class="n">line</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">MemberQuery</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">,</span> <span class="kt">U</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="n">member</span><span class="o">&lt;</span><span class="kt">U</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Reflectable.html">Reflectable</a></span> <span class="o">&amp;</span> <span class="kt">AnyObject</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">property</span><span class="p">:</span> <span class="kt">Selector</span><span class="p">,</span> <span class="n">ofType</span> <span class="nv">memberType</span><span class="p">:</span> <span class="kt">U</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span> <span class="nv">file</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="err">#</span><span class="n">file</span><span class="p">,</span> <span class="nv">line</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="err">#</span><span class="n">line</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/MemberQuery.html">MemberQuery</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="p">,</span> <span class="kt">U</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -435,8 +438,8 @@ NSPredicate(format: "friend == %@", legendaryCreature)
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2016 <a class="link" href="https://github.com/KrakenDev/PrediKit" target="_blank" rel="external">Hector Matos</a>. All rights reserved. (Last updated: 2016-05-30)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.6.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2016 <a class="link" href="https://github.com/KrakenDev/PrediKit" target="_blank" rel="external">Hector Matos</a>. All rights reserved. (Last updated: 2016-09-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

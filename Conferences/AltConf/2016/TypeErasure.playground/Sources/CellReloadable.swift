@@ -17,8 +17,8 @@ class AnyCellReloadable<ErasedDataType>: CellReloadable {
     }
     
     private let _didFinishEditing: (Bool, ErasedDataType) -> Void
-    private let _getLoadingCellObjects: Void -> [NSIndexPath : ErasedDataType]
-    private let _setLoadingCellObjects: [NSIndexPath : ErasedDataType] -> Void
+    private let _getLoadingCellObjects: (Void) -> [NSIndexPath : ErasedDataType]
+    private let _setLoadingCellObjects: ([NSIndexPath : ErasedDataType]) -> Void
     
     init<Injected: CellReloadable where Injected.DataType == ErasedDataType>(_ reloadable: Injected) {
         selectedIndexPath = reloadable.selectedIndexPath

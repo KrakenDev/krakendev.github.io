@@ -1,1 +1,110 @@
-{"warnings":[{"file":"/Users/hectormatos/Development/Xcode/PrediKit/Sources/Queries/StringQuery.swift","line":15,"symbol":"builder","symbol_kind":"source.lang.swift.decl.var.instance","warning":"undocumented"},{"file":"/Users/hectormatos/Development/Xcode/PrediKit/Sources/Queries/StringQuery.swift","line":16,"symbol":"property","symbol_kind":"source.lang.swift.decl.var.instance","warning":"undocumented"},{"file":"/Users/hectormatos/Development/Xcode/PrediKit/Sources/Queries/StringQuery.swift","line":18,"symbol":"isEmpty","symbol_kind":"source.lang.swift.decl.var.instance","warning":"undocumented"},{"file":"/Users/hectormatos/Development/Xcode/PrediKit/Sources/Queries/StringQuery.swift","line":22,"symbol":"init(builder:property:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/hectormatos/Development/Xcode/PrediKit/Sources/Queries/MemberQuery.swift","line":15,"symbol":"builder","symbol_kind":"source.lang.swift.decl.var.instance","warning":"undocumented"},{"file":"/Users/hectormatos/Development/Xcode/PrediKit/Sources/Queries/MemberQuery.swift","line":16,"symbol":"property","symbol_kind":"source.lang.swift.decl.var.instance","warning":"undocumented"},{"file":"/Users/hectormatos/Development/Xcode/PrediKit/Sources/Queries/NumberQuery.swift","line":15,"symbol":"builder","symbol_kind":"source.lang.swift.decl.var.instance","warning":"undocumented"},{"file":"/Users/hectormatos/Development/Xcode/PrediKit/Sources/Queries/NumberQuery.swift","line":16,"symbol":"property","symbol_kind":"source.lang.swift.decl.var.instance","warning":"undocumented"},{"file":"/Users/hectormatos/Development/Xcode/PrediKit/Sources/Queries/NumberQuery.swift","line":18,"symbol":"init(builder:property:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/hectormatos/Development/Xcode/PrediKit/Sources/Queries/BasicQuery.swift","line":15,"symbol":"builder","symbol_kind":"source.lang.swift.decl.var.instance","warning":"undocumented"},{"file":"/Users/hectormatos/Development/Xcode/PrediKit/Sources/Queries/BasicQuery.swift","line":16,"symbol":"property","symbol_kind":"source.lang.swift.decl.var.instance","warning":"undocumented"},{"file":"/Users/hectormatos/Development/Xcode/PrediKit/Sources/Queries/BasicQuery.swift","line":18,"symbol":"init(builder:property:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/hectormatos/Development/Xcode/PrediKit/Sources/Queries/DateQuery.swift","line":15,"symbol":"builder","symbol_kind":"source.lang.swift.decl.var.instance","warning":"undocumented"},{"file":"/Users/hectormatos/Development/Xcode/PrediKit/Sources/Queries/DateQuery.swift","line":16,"symbol":"property","symbol_kind":"source.lang.swift.decl.var.instance","warning":"undocumented"},{"file":"/Users/hectormatos/Development/Xcode/PrediKit/Sources/Queries/DateQuery.swift","line":18,"symbol":"init(builder:property:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/hectormatos/Development/Xcode/PrediKit/Sources/Value Types/SubqueryMatchTypes.swift","line":63,"symbol":"Equals","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/hectormatos/Development/Xcode/PrediKit/Sources/Value Types/SubqueryMatchTypes.swift","line":64,"symbol":"IsGreaterThan","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/hectormatos/Development/Xcode/PrediKit/Sources/Value Types/SubqueryMatchTypes.swift","line":65,"symbol":"IsGreaterThanOrEqualTo","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/hectormatos/Development/Xcode/PrediKit/Sources/Value Types/SubqueryMatchTypes.swift","line":66,"symbol":"IsLessThan","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/hectormatos/Development/Xcode/PrediKit/Sources/Value Types/SubqueryMatchTypes.swift","line":67,"symbol":"IsLessThanOrEqualTo","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/hectormatos/Development/Xcode/PrediKit/Sources/Protocols/Matchable.swift","line":32,"symbol":"matchesAnyValueIn(_:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/hectormatos/Development/Xcode/PrediKit/Sources/Queries/BooleanQuery.swift","line":15,"symbol":"builder","symbol_kind":"source.lang.swift.decl.var.instance","warning":"undocumented"},{"file":"/Users/hectormatos/Development/Xcode/PrediKit/Sources/Queries/BooleanQuery.swift","line":16,"symbol":"property","symbol_kind":"source.lang.swift.decl.var.instance","warning":"undocumented"},{"file":"/Users/hectormatos/Development/Xcode/PrediKit/Sources/Queries/BooleanQuery.swift","line":18,"symbol":"init(builder:property:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/hectormatos/Development/Xcode/PrediKit/Sources/Builders/FinalizedIncluder.swift","line":79,"symbol":"T","symbol_kind":"source.lang.swift.decl.generic_type_param","warning":"undocumented"},{"file":"/Users/hectormatos/Development/Xcode/PrediKit/Sources/Builders/FinalizedIncluder.swift","line":88,"symbol":"T","symbol_kind":"source.lang.swift.decl.generic_type_param","warning":"undocumented"},{"file":"/Users/hectormatos/Development/Xcode/PrediKit/Sources/Builders/FinalizedIncluder.swift","line":97,"symbol":"T","symbol_kind":"source.lang.swift.decl.generic_type_param","warning":"undocumented"},{"file":"/Users/hectormatos/Development/Xcode/PrediKit/Sources/Extensions/NSArray+PrediKit.swift","line":14,"symbol":"startIndex","symbol_kind":"source.lang.swift.decl.var.instance","warning":"undocumented"},{"file":"/Users/hectormatos/Development/Xcode/PrediKit/Sources/Extensions/NSArray+PrediKit.swift","line":15,"symbol":"endIndex","symbol_kind":"source.lang.swift.decl.var.instance","warning":"undocumented"},{"file":"/Users/hectormatos/Development/Xcode/PrediKit/Sources/Queries/SequenceQuery.swift","line":15,"symbol":"builder","symbol_kind":"source.lang.swift.decl.var.instance","warning":"undocumented"},{"file":"/Users/hectormatos/Development/Xcode/PrediKit/Sources/Queries/SequenceQuery.swift","line":16,"symbol":"property","symbol_kind":"source.lang.swift.decl.var.instance","warning":"undocumented"},{"file":"/Users/hectormatos/Development/Xcode/PrediKit/Sources/Queries/SequenceQuery.swift","line":18,"symbol":"init(builder:property:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/hectormatos/Development/Xcode/PrediKit/Sources/Value Types/PredicateOptions.swift","line":19,"symbol":"init(rawValue:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/hectormatos/Development/Xcode/PrediKit/Sources/Protocols/NilComparable.swift","line":22,"symbol":"equalsNil","symbol_kind":"source.lang.swift.decl.var.instance","warning":"undocumented"}],"source_directory":"/Users/hectormatos/Development/Xcode/PrediKit"}
+{
+  "warnings": [
+    {
+      "file": "/Users/hectormatos/Development/Xcode/PrediKit/Sources/Builders/FinalizedIncluder.swift",
+      "line": 79,
+      "symbol": "&&(_:_:).T",
+      "symbol_kind": "source.lang.swift.decl.generic_type_param",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hectormatos/Development/Xcode/PrediKit/Sources/Builders/FinalizedIncluder.swift",
+      "line": 88,
+      "symbol": "||(_:_:).T",
+      "symbol_kind": "source.lang.swift.decl.generic_type_param",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hectormatos/Development/Xcode/PrediKit/Sources/Builders/FinalizedIncluder.swift",
+      "line": 97,
+      "symbol": "!(_:).T",
+      "symbol_kind": "source.lang.swift.decl.generic_type_param",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hectormatos/Development/Xcode/PrediKit/Sources/Extensions/Number+PrediKit.swift",
+      "line": 11,
+      "symbol": "Number",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hectormatos/Development/Xcode/PrediKit/Sources/Queries/BasicQuery.swift",
+      "line": 18,
+      "symbol": "BasicQuery.init(builder:property:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hectormatos/Development/Xcode/PrediKit/Sources/Queries/BooleanQuery.swift",
+      "line": 18,
+      "symbol": "BooleanQuery.init(builder:property:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hectormatos/Development/Xcode/PrediKit/Sources/Queries/DateQuery.swift",
+      "line": 18,
+      "symbol": "DateQuery.init(builder:property:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hectormatos/Development/Xcode/PrediKit/Sources/Queries/NumberQuery.swift",
+      "line": 18,
+      "symbol": "NumberQuery.init(builder:property:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hectormatos/Development/Xcode/PrediKit/Sources/Queries/SequenceQuery.swift",
+      "line": 18,
+      "symbol": "SequenceQuery.init(builder:property:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hectormatos/Development/Xcode/PrediKit/Sources/Queries/StringQuery.swift",
+      "line": 18,
+      "symbol": "StringQuery.init(builder:property:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hectormatos/Development/Xcode/PrediKit/Sources/Value Types/SubqueryMatchTypes.swift",
+      "line": 63,
+      "symbol": "MatchType.FunctionType.CompareType.equals",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hectormatos/Development/Xcode/PrediKit/Sources/Value Types/SubqueryMatchTypes.swift",
+      "line": 64,
+      "symbol": "MatchType.FunctionType.CompareType.isGreaterThan",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hectormatos/Development/Xcode/PrediKit/Sources/Value Types/SubqueryMatchTypes.swift",
+      "line": 65,
+      "symbol": "MatchType.FunctionType.CompareType.isGreaterThanOrEqualTo",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hectormatos/Development/Xcode/PrediKit/Sources/Value Types/SubqueryMatchTypes.swift",
+      "line": 66,
+      "symbol": "MatchType.FunctionType.CompareType.isLessThan",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hectormatos/Development/Xcode/PrediKit/Sources/Value Types/SubqueryMatchTypes.swift",
+      "line": 67,
+      "symbol": "MatchType.FunctionType.CompareType.isLessThanOrEqualTo",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/hectormatos/Development/Xcode/PrediKit"
+}

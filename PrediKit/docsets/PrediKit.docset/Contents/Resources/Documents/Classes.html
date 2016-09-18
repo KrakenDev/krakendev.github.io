@@ -13,7 +13,7 @@
     <a title="Classes  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">PrediKit Docs</a> (67% documented)</p>
+        <p><a href="index.html">PrediKit Docs</a> (85% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -67,14 +67,14 @@
               <li class="nav-group-task">
                 <a href="Enums/MatchType.html">MatchType</a>
               </li>
+              <li class="nav-group-task">
+                <a href="Enums/MatchType/FunctionType.html">– FunctionType</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
             <a href="Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="Extensions/NSArray.html">NSArray</a>
-              </li>
               <li class="nav-group-task">
                 <a href="Extensions/NSObject.html">NSObject</a>
               </li>
@@ -90,16 +90,16 @@
                 <a href="Functions/!(_:).html">!(_:)</a>
               </li>
               <li class="nav-group-task">
+                <a href="Functions.html#/s:F8PrediKitoi2aaFTCSo11NSPredicateS0__S0_">&amp;&amp;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Functions/&amp;&amp;(_:_:).html">&amp;&amp;(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="Functions.html#/s:ZF8PrediKitoi2aaFTCSo11NSPredicateS0__S0_">&amp;&amp;(_:_:)</a>
+                <a href="Functions.html#/s:F8PrediKitoi2ooFTCSo11NSPredicateS0__S0_">||(_:_:)</a>
               </li>
               <li class="nav-group-task">
                 <a href="Functions/||(_:_:).html">||(_:_:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Functions.html#/s:ZF8PrediKitoi2ooFTCSo11NSPredicateS0__S0_">||(_:_:)</a>
               </li>
             </ul>
           </li>
@@ -111,6 +111,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/NilComparable.html">NilComparable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/s:P8PrediKit6Number">Number</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/Queryable.html">Queryable</a>
@@ -161,7 +164,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">StringQuery</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">Reflectable</span><span class="o">&gt;</span><span class="p">:</span> <span class="kt">NilComparable</span><span class="p">,</span> <span class="kt">Matchable</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">StringQuery</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt"><a href="Protocols/Reflectable.html">Reflectable</a></span><span class="o">&gt;</span><span class="p">:</span> <span class="kt"><a href="Protocols/NilComparable.html">NilComparable</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/Matchable.html">Matchable</a></span></code></pre>
 
                         </div>
                       </div>
@@ -193,7 +196,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">MemberQuery</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">Reflectable</span><span class="p">,</span> <span class="kt">MemberType</span><span class="p">:</span> <span class="kd">protocol</span><span class="o">&lt;</span><span class="kt">Reflectable</span><span class="p">,</span> <span class="kt">AnyObject</span><span class="o">&gt;&gt;</span><span class="p">:</span> <span class="kt">PredicateBuilder</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">,</span> <span class="kt">Matchable</span><span class="p">,</span> <span class="kt">NilComparable</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">MemberQuery</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt"><a href="Protocols/Reflectable.html">Reflectable</a></span><span class="p">,</span> <span class="kt">MemberType</span><span class="p">:</span> <span class="kt"><a href="Protocols/Reflectable.html">Reflectable</a></span> <span class="o">&amp;</span> <span class="kt">AnyObject</span><span class="o">&gt;</span><span class="p">:</span> <span class="kt"><a href="Classes/PredicateBuilder.html">PredicateBuilder</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">,</span> <span class="kt"><a href="Protocols/Matchable.html">Matchable</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/NilComparable.html">NilComparable</a></span></code></pre>
 
                         </div>
                       </div>
@@ -225,7 +228,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">NumberQuery</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">Reflectable</span><span class="o">&gt;</span><span class="p">:</span> <span class="kt">NilComparable</span><span class="p">,</span> <span class="kt">Matchable</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">NumberQuery</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt"><a href="Protocols/Reflectable.html">Reflectable</a></span><span class="o">&gt;</span><span class="p">:</span> <span class="kt"><a href="Protocols/NilComparable.html">NilComparable</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/Matchable.html">Matchable</a></span></code></pre>
 
                         </div>
                       </div>
@@ -257,7 +260,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">BasicQuery</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">Reflectable</span><span class="o">&gt;</span><span class="p">:</span> <span class="kt">NilComparable</span><span class="p">,</span> <span class="kt">Matchable</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">BasicQuery</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt"><a href="Protocols/Reflectable.html">Reflectable</a></span><span class="o">&gt;</span><span class="p">:</span> <span class="kt"><a href="Protocols/NilComparable.html">NilComparable</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/Matchable.html">Matchable</a></span></code></pre>
 
                         </div>
                       </div>
@@ -281,14 +284,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A class that facilitates the creation of subqueries against <code>T</code>&rsquo;s <code>CollectionType</code> properties. Used in tandem with the <code>PredicateSequenceQuery&lt;T&gt;</code> class.</p>
+                        <p>A class that facilitates the creation of subqueries against <code>T</code>&rsquo;s <code>CollectionType</code> properties. Used in tandem with the <code><a href="Classes/SequenceQuery.html">SequenceQuery&lt;T&gt;</a></code> class.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">PredicateSubqueryBuilder</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">Reflectable</span><span class="o">&gt;</span><span class="p">:</span> <span class="kt">PredicateBuilder</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">PredicateSubqueryBuilder</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt"><a href="Protocols/Reflectable.html">Reflectable</a></span><span class="o">&gt;</span><span class="p">:</span> <span class="kt"><a href="Classes/PredicateBuilder.html">PredicateBuilder</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -320,7 +323,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">DateQuery</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">Reflectable</span><span class="o">&gt;</span><span class="p">:</span> <span class="kt">NilComparable</span><span class="p">,</span> <span class="kt">Matchable</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">DateQuery</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt"><a href="Protocols/Reflectable.html">Reflectable</a></span><span class="o">&gt;</span><span class="p">:</span> <span class="kt"><a href="Protocols/NilComparable.html">NilComparable</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/Matchable.html">Matchable</a></span></code></pre>
 
                         </div>
                       </div>
@@ -344,7 +347,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The class that gets passed into the builder closure of PrediKit&rsquo;s <code><a href="Extensions/NSPredicate.html">NSPredicate</a></code> convenience initializer.</p>
+                        <p>The class that gets passed into the builder closure of PrediKit&rsquo;s <code>NSPredicate</code> convenience initializer.</p>
 
                         <a href="Classes/PredicateBuilder.html" class="slightly-smaller">See more</a>
                       </div>
@@ -352,7 +355,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">PredicateBuilder</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">Reflectable</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">PredicateBuilder</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt"><a href="Protocols/Reflectable.html">Reflectable</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -384,7 +387,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">BooleanQuery</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">Reflectable</span><span class="o">&gt;</span><span class="p">:</span> <span class="kt">NilComparable</span><span class="p">,</span> <span class="kt">Matchable</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">BooleanQuery</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt"><a href="Protocols/Reflectable.html">Reflectable</a></span><span class="o">&gt;</span><span class="p">:</span> <span class="kt"><a href="Protocols/NilComparable.html">NilComparable</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/Matchable.html">Matchable</a></span></code></pre>
 
                         </div>
                       </div>
@@ -408,14 +411,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A class that finalizes an includer created within the builder closure of PrediKit&rsquo;s <code><a href="Extensions/NSPredicate.html">NSPredicate</a></code> convenience initializer. All includers (basically any line of code within that closure) must end in a call to a function that returns an instance or subclassed instance of this class to create a valid <code><a href="Extensions/NSPredicate.html">NSPredicate</a></code>.</p>
+                        <p>A class that finalizes an includer created within the builder closure of PrediKit&rsquo;s <code>NSPredicate</code> convenience initializer. All includers (basically any line of code within that closure) must end in a call to a function that returns an instance or subclassed instance of this class to create a valid <code>NSPredicate</code>.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">FinalizedIncluder</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">Reflectable</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">FinalizedIncluder</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt"><a href="Protocols/Reflectable.html">Reflectable</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -447,7 +450,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">SequenceQuery</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">Reflectable</span><span class="o">&gt;</span><span class="p">:</span> <span class="kt">NilComparable</span><span class="p">,</span> <span class="kt">Matchable</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">SequenceQuery</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt"><a href="Protocols/Reflectable.html">Reflectable</a></span><span class="o">&gt;</span><span class="p">:</span> <span class="kt"><a href="Protocols/NilComparable.html">NilComparable</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/Matchable.html">Matchable</a></span></code></pre>
 
                         </div>
                       </div>
@@ -459,8 +462,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2016 <a class="link" href="https://github.com/KrakenDev/PrediKit" target="_blank" rel="external">Hector Matos</a>. All rights reserved. (Last updated: 2016-05-30)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.6.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2016 <a class="link" href="https://github.com/KrakenDev/PrediKit" target="_blank" rel="external">Hector Matos</a>. All rights reserved. (Last updated: 2016-09-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

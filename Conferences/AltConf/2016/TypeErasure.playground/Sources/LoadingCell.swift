@@ -12,8 +12,8 @@ class LoadingCell: UITableViewCell {
         super.layoutSubviews()
         
         label.frame = bounds
-        label.textAlignment = .Center
-        label.font = .italicSystemFontOfSize(40.0)
+        label.textAlignment = .center
+        label.font = .italicSystemFont(ofSize: 40.0)
         contentView.addSubview(label)
     }
 }
